@@ -1,0 +1,80 @@
+$accentColor: #2196F3;
+
+.ticket {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    &__header {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+  
+      .title {
+        margin: 0;
+        font-weight: normal;
+        line-height: 24px;
+        font-size: 24px;
+        color: $accentColor;
+      }
+    }
+  
+    &__main {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-top: 20px;
+  
+      &-top {
+        display: flex;
+        justify-content: space-between;
+  
+        .departure {
+          width: 141px;
+  
+          &__title {
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 18px;
+            color: #a0b0b9;
+          }
+  
+          &__info {
+            font-size: 14px;
+            line-height: 21px;
+            color: #4a4a4a;
+          }
+        }
+      }
+  
+      &-bottom {
+        justify-content: space-between;
+        margin-top: 10px;
+        display: flex;
+  
+        .arrival {
+          width: 141px;
+  
+          &__title {
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 18px;
+            color: #a0b0b9;
+          }
+          &__info {
+            font-size: 14px;
+            line-height: 21px;
+            color: #4a4a4a;
+          }
+        }
+      }
+    }
+}
+.ticket:last-child{
+    margin-bottom: 30px;
+}

@@ -1,9 +1,9 @@
 import './App.scss';
 
-import logoCompany from './media/S7 Logo.svg';
 import FilterAside from './components/FilterAside/FilterAside';
 import Header from './components/Header/Header';
 import TabButton from './components/TabButton/TabButton';
+import TicketList from './components/TicketList/TicketList';
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
           <FilterAside />
           <div className="content">
             <TabButton />
-            <div className="ticket">
+            <TicketList />
+            {/* <div className="ticket">
               <div className="ticket__header">
                 <h3 className="title">13 400 Р </h3>
                 <img src={logoCompany} alt="logo company" />
@@ -49,7 +50,7 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

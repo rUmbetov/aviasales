@@ -1,39 +1,35 @@
-import styleAside from './FilterAside.module.scss';
+import styles from './FilterAside.module.scss';
 
 const FilterAside = () => {
-  console.log(styleAside.customCheckbox);
   return (
-    <div className={styleAside.filterAside}>
-      <h3 className={styleAside.filterAside__title}>КОЛИЧЕСТВО ПЕРЕСАДОК</h3>
+    <div className={styles.filterAside}>
+      <h3 className={styles.filterAside__title}>КОЛИЧЕСТВО ПЕРЕСАДОК</h3>
 
-      <label className={styleAside.filterAside__choice}>
+      <label className={styles.filterAside__choice}>
         <input type="checkbox" name="stops" value="all" />
-        <span className={styleAside.customCheckbox}></span>
+        <span className={styles.customCheckbox}></span>
         Все
       </label>
 
-      <label className={styleAside.filterAside__choice}>
+      <label className={styles.filterAside__choice}>
         <input type="checkbox" name="stops" value="all" />
-        <span className={styleAside.customCheckbox}></span>
-        Все
+        <span className={styles.customCheckbox}></span>
+        Без пересадок
       </label>
 
-      <label className={styleAside.filterAside__choice}>
+      <label className={styles.filterAside__choice}>
         <input type="checkbox" name="stops" value="all" />
-        <span className={styleAside.customCheckbox}></span>
-        Все
+        <span className={styles.customCheckbox}></span>1 пересадка
       </label>
 
-      <label className={styleAside.filterAside__choice}>
+      <label className={styles.filterAside__choice}>
         <input type="checkbox" name="stops" value="all" />
-        <span className={styleAside.customCheckbox}></span>
-        Все
+        <span className={styles.customCheckbox}></span>2 пересадки
       </label>
 
-      <label className={styleAside.filterAside__choice}>
+      <label className={styles.filterAside__choice}>
         <input type="checkbox" name="stops" value="all" />
-        <span className={styleAside.customCheckbox}></span>
-        Все
+        <span className={styles.customCheckbox}></span>3 пересадки
       </label>
     </div>
   );

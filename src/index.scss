@@ -4,7 +4,7 @@
   background-color: rgba(243, 247, 250, 1);
   display: flex;
   justify-content: center;
-  min-height: 100vh; /* Используйте min-height вместо height, чтобы избежать переполнения */
+  min-height: 100vh;
 }
 html, body, :root {
   width: 100%;

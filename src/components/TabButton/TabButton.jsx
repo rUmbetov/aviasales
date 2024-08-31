@@ -1,9 +1,10 @@
+import styles from './TabButton.module.scss';
 const TabButton = () => {
   return (
-    <div className="tab">
-      <button className="tab__button">Самый дешевый</button>
-      <button className="tab__button">Самый быстрый</button>
-      <button className="tab__button">оптимальный</button>
+    <div className={styles.tab}>
+      <button className={styles.tab__button}>Самый дешевый</button>
+      <button className={styles.tab__button}>Самый быстрый</button>
+      <button className={styles.tab__button}>Оптимальный</button>
     </div>
   );
 };

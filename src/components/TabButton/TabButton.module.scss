@@ -1,0 +1,33 @@
+$accentColor: #2196F3;
+.tab{
+    font-size: 12px;
+    line-height: 20px;
+    &__button:first-child{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: 1px solid rgba(223, 229, 236, 1);
+    }
+    &__button:last-child{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: 1px solid rgba(223, 229, 236, 1);
+    }
+    &__button{
+        color: #4A4A4A;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(223, 229, 236, 1);
+        width: 182px;
+    }
+    &__button:active:hover{
+        color: #fff;
+        background-color: $accentColor;
+    }
+    &__button:hover{
+        color: #fff;
+        background-color: $accentColor;
+    }
+  }
