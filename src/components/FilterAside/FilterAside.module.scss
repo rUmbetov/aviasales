@@ -1,0 +1,59 @@
+.filterAside {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px silver;
+    display: flex;
+    flex-direction: column;
+    height: 252px;
+    &__title{
+      margin: 20px 20px 10px;
+      color: #4a4a4a;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    &__choiсe {
+      font-weight: 200;
+      display: flex;
+      align-items: center;
+      padding: 8px 10px;
+      cursor: pointer;
+      position: relative;
+  
+      input {
+        display: none;
+      }
+  
+      .customCheckbox {
+        width: 16px;
+        height: 16px;
+        border: 2px solid #007bff;
+        border-radius: 3px;
+        margin-right: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s, border-color 0.3s;
+  
+        &::after {
+          content: "";
+          width: 8px;
+          height: 8px;
+          background-color: transparent;
+          border-radius: 2px;
+          position: absolute;
+          transition: background-color 0.3s;
+        }
+      }
+  
+      input:checked + .customCheckbox {
+        background-color: #e6f0ff;
+        border-color: #007bff;
+  
+        &::after {
+          background-color: #007bff;
+        }
+      }
+    }
+  }
