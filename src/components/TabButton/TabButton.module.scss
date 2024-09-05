@@ -1,18 +1,22 @@
 $accentColor: #2196F3;
-.tab{
+
+.tab {
     font-size: 12px;
     line-height: 20px;
-    &__button:first-child{
+
+    &__button:first-child {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         border: 1px solid rgba(223, 229, 236, 1);
     }
-    &__button:last-child{
+
+    &__button:last-child {
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         border: 1px solid rgba(223, 229, 236, 1);
     }
-    &__button{
+
+    &__button {
         color: #4A4A4A;
         font-size: 12px;
         line-height: 20px;
@@ -21,13 +25,18 @@ $accentColor: #2196F3;
         background-color: rgba(255, 255, 255, 1);
         border: 1px solid rgba(223, 229, 236, 1);
         width: 182px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        
+        &:hover {
+            color: #fff;
+            background-color: $accentColor;
+        }
+
+        &.active {
+            color: #fff;
+            background-color: $accentColor;
+            border: 1px solid $accentColor;
+        }
     }
-    &__button:active:hover{
-        color: #fff;
-        background-color: $accentColor;
-    }
-    &__button:hover{
-        color: #fff;
-        background-color: $accentColor;
-    }
-  }
+}

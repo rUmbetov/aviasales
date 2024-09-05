@@ -2,3 +2,20 @@
     margin: 0;
     padding: 0;
 }
+.spin{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    gap: 15px;
+}
+.alert{
+    border-color: #2196F3;
+    margin-top: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.btn{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
