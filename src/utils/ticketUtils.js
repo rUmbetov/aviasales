@@ -11,18 +11,13 @@ export const filterTickets = (tickets, filters) => {
 };
 
 export const sortedTickets = (tickets, sortType) => {
-  return [...tickets].sort((a, b) => {
-    switch (sortType) {
-    case 'price':
-        return a.price - b.price;
-      case 'duration':
-      return a.segments[0].duration - b.segments[1].duration;
-    case 'optimal':
-        return a.price + a.segments[0].duration - (b.price + b.segments[1].duration);
-      default:
-        return 0;
-    }
-  });
+  const sortMethods = {
+    price: (a, b) => a.price - b.price,
+    duration: (a, b) => a.segments[0].duration - b.segments[1].duration,
+    optimal: (a, b) => a.price + a.segments[0].duration - (b.price + b.segments[1].duration),
+  };
+
+  return [...tickets].sort(sortMethods[sortType] || (() => 0));
 };
 
 export const transferStops = (stops) => {
